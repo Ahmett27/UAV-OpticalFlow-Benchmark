@@ -44,7 +44,7 @@ DATASET_KLASORU = "/path/to/your/flight_data"
 benchmarker = OpticalFlowBenchmarker(dataset_dir=DATASET_KLASORU, ptlflow_model_name='raft_small')
 benchmarker.run_benchmark(max_frames=200, warmup_frames=50)
 
-# warmup_frames: The number of initial frames to exclude from the analysis to allow the navigation filters (EKF) to converge and to skip startup noise/takeoff vibrations.
+ warmup_frames: The number of initial frames to exclude from the analysis to allow the navigation filters (EKF) to converge and to skip startup noise/takeoff vibrations.
 
 
 📊 Outputs
@@ -60,6 +60,7 @@ trajectory_map.png: A 2D bird's-eye SLAM comparison of the true flight path (Gro
 
 
 🇹🇷 TR - Türkçe
+
 Bu proje, sabit aşağı bakan (nadir) kameraya sahip İnsansız Hava Araçlarından (İHA) elde edilen sentetik uçuş verileri (AirSim + PX4/MAVLink) üzerinden optik akış (optical flow) algoritmalarının doğruluk paylarını analiz eden kapsamlı bir benchmark aracıdır.
 
 Proje, sadece görüntü işleme metriklerini hesaplamakla kalmaz; aynı zamanda Otopilot'tan gelen IMU ve GPS verilerini kullanarak Sensör Füzyonu (Sensor Fusion) yapar ve drone'un 2D SLAM benzeri uçuş rotasını haritalandırır.
@@ -98,7 +99,7 @@ DATASET_KLASORU = "/path/to/your/flight_data"
 benchmarker = OpticalFlowBenchmarker(dataset_dir=DATASET_KLASORU, ptlflow_model_name='raft_small')
 benchmarker.run_benchmark(max_frames=200, warmup_frames=50)
 
-# warmup_frames: Navigasyon filtrelerinin (EKF) yakınsaması ve kalkış sarsıntılarının (startup noise) atlanması için analiz dışı bırakılacak başlangıç kare sayısıdır.
+ warmup_frames: Navigasyon filtrelerinin (EKF) yakınsaması ve kalkış sarsıntılarının (startup noise) atlanması için analiz dışı bırakılacak başlangıç kare sayısıdır.
 
 📊 Çıktılar (Outputs)
 Çalıştırma tamamlandığında, kod ana dizine aşağıdaki dosyaları üretir:
