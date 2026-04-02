@@ -7,9 +7,13 @@ The project goes beyond calculating standard computer vision metrics; it perform
 ## ✨ Key Features
 
 * **Algorithm Comparison:** Evaluates deep learning-based AI models (PTLFlow - RAFT) alongside classical computer vision algorithms (Farneback, Lucas-Kanade) simultaneously.
+* 
 * **Digital Gimbal (Mathematical Stabilization):** Filters out the camera shake (Rotational Flow) caused by the UAV's braking and maneuvering using angular velocity data (`pitchspeed`, `rollspeed`) from the IMU, isolating only the translational movement.
+* 
 * **Dynamic Kinematic Transformation:** Converts Global Earth Frame GPS velocity vectors (North/East) into the Camera's Body Frame (Forward/Right) dynamically using the drone's instant compass heading (`yaw`).
+* 
 * **Sub-pixel Accuracy:** Calculates `EPE (End-Point Error)` and `AE (Angular Error)` metrics with sub-pixel precision through velocity and time ($\Delta t$) integrations.
+* 
 * **SLAM-like Trajectory Map:** Cumulatively stitches together the instantaneous pixel shift estimates of the algorithms to draw a comparative 2D SLAM-like trajectory against the Ground Truth.
 
 ## 🛠️ Installation & Requirements
@@ -67,9 +71,14 @@ Proje, sadece görüntü işleme metriklerini hesaplamakla kalmaz; aynı zamanda
 
 ✨ Öne Çıkan Özellikler
 Algoritma Karşılaştırması: Derin öğrenme tabanlı yapay zeka modelleri (PTLFlow - RAFT) ile klasik bilgisayarlı görü algoritmalarını (Farneback, Lucas-Kanade) aynı anda test eder.
-Dijital Gimbal (Matematiksel Stabilizasyon): İHA'nın frenleme ve manevra anlarındaki sarsıntılarını (Rotational Flow), IMU'dan alınan açısal hız (pitchspeed, rollspeed) verileriyle filtreler. Sadece öteleme (Translational) hareketini izole eder.
+
+Dijital Gimbal (Matematiksel Stabilizasyon): İHA'nın frenleme ve manevra anlarındaki sarsıntılarını (Rotational Flow), IMU'dan alınan açısal hız (pitchspeed, rollspeed) verileriyle filtreler. Sadece öteleme 
+(Translational) hareketini izole eder.
+
 Dinamik Kinematik Dönüşüm: Drone'un anlık pusula yönünü (yaw) kullanarak, Global Dünya Eksenindeki (Kuzey/Doğu) GPS hız vektörlerini, Kameranın Gövde Eksenine (İleri/Sağa) dinamik olarak dönüştürür.
+
 Piksel Altı (Sub-pixel) Hassasiyet: Hız ve zaman ($\Delta t$) entegrasyonları sayesinde EPE (End-Point Error) ve AE (Angular Error) metriklerini piksel altı doğrulukla hesaplar.
+
 SLAM Benzeri Rota Haritası: Algoritmaların anlık piksel kayma tahminlerini kümülatif olarak uç uca ekleyerek, referans rota (Ground Truth) ile tahmin edilen 2D rotayı karşılaştırmalı olarak çizer.
 
 🛠️ Kurulum ve GereksinimlerProjeyi çalıştırmak için aşağıdaki kütüphanelerin yüklü olması gerekmektedir:
