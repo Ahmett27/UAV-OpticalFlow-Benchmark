@@ -28,16 +28,23 @@ pip install numpy pandas opencv-python matplotlib torch ptlflow
 📁 Dataset Hierarchy (Input Format)
 For the code to work, your dataset must have the following folder structure and MAVLink-standard CSV outputs:
 flight_data_folder/
+
 ├── video/
+
 │   ├── nadir_1280x720_30fps.mp4
+
 │   └── frame_timestamps.csv
+
 ├── telemetry/
+
 │   └── attitude_log.csv
+
 └── ground_truth/
-    └── expected_flow.csv
+
+   └── expected_flow.csv
 
 
-    🚀 Usage
+🚀 Usage
 Simply initialize the OpticalFlowBenchmarker class and specify your dataset path:
 from benchmarker import OpticalFlowBenchmarker
 
@@ -89,12 +96,17 @@ pip install numpy pandas opencv-python matplotlib torch ptlflow
 Kodun çalışabilmesi için veri setinin aşağıdaki klasör yapısına ve MAVLink standartlarında CSV çıktılarına sahip olması beklenir:
 flight_data_folder/
 ├── video/
+
 │   ├── nadir_1280x720_30fps.mp4
+
 │   └── frame_timestamps.csv
 ├── telemetry/
+
 │   └── attitude_log.csv
+
 └── ground_truth/
-    └── expected_flow.csv
+
+   └── expected_flow.csv
 
 
 🚀 Kullanım
